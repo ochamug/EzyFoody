@@ -80,7 +80,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="70dp"
         android:layout_marginHorizontal="10dp"
-        android:text="Place com.example.binusezyfoody.Order"
+        android:text="Place Order"
         android:onClick="placeOrder"
         android:fontFamily="monospace"
         android:textFontWeight="600"/>

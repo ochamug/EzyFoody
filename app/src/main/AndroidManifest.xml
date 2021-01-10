@@ -13,13 +13,13 @@
         <activity android:name=".TopUpActivity" />
         <activity
             android:name=".OrderCompleteActivity"
-            android:label="com.example.binusezyfoody.Order Complete" />
+            android:label="Order Complete" />
         <activity
             android:name=".MyOrderActivity"
-            android:label="My com.example.binusezyfoody.Order" />
+            android:label="My Order" />
         <activity
             android:name=".OrderActivity"
-            android:label="com.example.binusezyfoody.Order" />
+            android:label="Order" />
         <activity
             android:name=".MenuActivity"
             android:label="Bruh" />
