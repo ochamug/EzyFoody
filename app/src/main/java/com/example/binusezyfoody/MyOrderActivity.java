@@ -67,7 +67,8 @@ public class MyOrderActivity extends AppCompatActivity {
                 Log.v("stock", stock.get(id-1).name + ", " + stock.get(id-1).quantity);
             }
 
-
+            Order order = new Order(total, myOrder);
+            new MainActivity().history.add(order);
         }
 
     }

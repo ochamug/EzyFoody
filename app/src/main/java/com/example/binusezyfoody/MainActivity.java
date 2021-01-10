@@ -10,13 +10,16 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static ArrayList<Item> stocks;
     public static ArrayList<Item> orders;
     public static int balance = 200000;
-    public static ArrayList<Item> stocks;
+    public static ArrayList<Order> history;
+
 
     TextView tvBalance;
 

@@ -27,10 +27,22 @@ public class TopUpActivity extends AppCompatActivity {
     }
 
     public void topUp(View v){
+
         if(txtTopUp.getText().toString().equals("")){
-            Toast.makeText(this, "TopUp field must be filled", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Top Up field must be filled", Toast.LENGTH_LONG).show();
             return;
         }
+        try {
+            if(Integer.parseInt(txtTopUp.getText().toString()) > 2000000){
+                Toast.makeText(this, "Maximum balance Rp. 2.000.000", Toast.LENGTH_LONG).show();
+                return;
+            }
+        } catch (Exception e) {
+            Toast.makeText(this, "Number is too large or invalid", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+
 
         int balance = Integer.parseInt(txtTopUp.getText().toString());
         new MainActivity().balance += balance;
