@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderCompleteActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnMenuUtama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Utama"
+        android:onClick="toHome"
+        android:layout_gravity="right"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:textFontWeight="600"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your com.example.binusezyfoody.Order is Complete!\nThank You!"
+        android:layout_marginVertical="8dp"
+        android:textColor="@color/purple_700"
+        android:fontFamily="monospace"
+        android:textSize="18dp"
+        android:textFontWeight="900"/>
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: "
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+        android:textFontWeight="600"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"/>/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
